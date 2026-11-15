@@ -43,6 +43,43 @@
     @media(max-width:800px){.hero{grid-template-columns:1fr;gap:50px;padding:65px 0}.portrait-wrap{width:min(290px,75%);grid-row:1}.hero-copy{grid-row:2}.about-grid,.skill-grid,.education{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:5px}.contact-box{align-items:flex-start;flex-direction:column}.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#0b1220;padding:20px 25px;flex-direction:column;gap:16px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}}
     @media(max-width:480px){.container{width:min(100% - 28px,1120px)}h1{font-size:2.75rem}.stats{grid-template-columns:1fr}.floating{left:-15px}.card{padding:20px}.contact-box{padding:24px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+ /* Photography Gallery */
+#photography .about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+}
+
+#photography .card {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+#photography .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+#photography .card:hover img {
+  transform: scale(1.06);
+}
+
+@media (max-width: 700px) {
+  #photography .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  #photography .card img {
+    height: 150px;
+  }
+}
   </style>
 </head>
 <body>
