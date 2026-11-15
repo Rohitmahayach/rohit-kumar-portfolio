@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rohit Kumar — HR and Administrative Professional. Talent acquisition, HR operations, institutional coordination and data-driven reporting." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Rohit Kumar | HR & Administrative Professional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1220;--panel:#111c2e;--panel2:#152238;--text:#eef4ff;--muted:#a9b8ce;--blue:#75a9ff;--cyan:#67e8d2;--line:rgba(180,205,240,.15);--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 8%,rgba(52,104,180,.18),transparent 27%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(11,18,32,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font:800 1.35rem Manrope,sans-serif;letter-spacing:.04em}.brand span{color:var(--blue)}
+    .navlinks{display:flex;gap:26px;color:var(--muted);font-size:.91rem}.navlinks a:hover{color:var(--white)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:9px}
+    .hero{padding:92px 0 82px;display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center;min-height:650px}
+    .eyebrow{display:inline-flex;gap:10px;align-items:center;color:var(--cyan);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.75rem}
+    .dot{width:8px;height:8px;background:var(--cyan);border-radius:50%;box-shadow:0 0 16px var(--cyan)}
+    h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.15}h1{font-size:clamp(2.8rem,6vw,5.2rem);letter-spacing:-.055em;margin:20px 0 18px}h1 span{color:var(--blue)}
+    .hero p{font-size:1.12rem;color:var(--muted);max-width:640px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:11px;font-weight:700;border:1px solid var(--line);transition:.25s}
+    .btn.primary{background:linear-gradient(120deg,#6fa4ff,#6bdccf);color:#071321;border:0}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px #0005}
+    .portrait-wrap{position:relative;justify-self:center;width:min(330px,85%);aspect-ratio:4/5}.portrait-wrap:before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid rgba(117,169,255,.6);border-radius:28px}
+    .portrait{position:relative;width:100%;height:100%;object-fit:cover;object-position:center 25%;border-radius:28px;border:1px solid var(--line);box-shadow:0 25px 80px #0008}
+    .floating{position:absolute;bottom:25px;left:-42px;background:var(--panel);border:1px solid var(--line);padding:14px 17px;border-radius:14px;box-shadow:0 15px 40px #0007}.floating strong{display:block;font:800 1.1rem Manrope}.floating small{color:var(--muted)}
+    section{padding:82px 0;border-top:1px solid var(--line)}.section-kicker{color:var(--cyan);font-size:.75rem;text-transform:uppercase;letter-spacing:.16em;font-weight:700}
+    h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;margin:10px 0 16px}.lead{color:var(--muted);max-width:760px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:34px}.card{background:linear-gradient(145deg,rgba(21,34,56,.92),rgba(17,28,46,.92));border:1px solid var(--line);border-radius:18px;padding:25px}
+    .card h3{font-size:1.12rem;margin:0 0 12px}.card p{margin:0;color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+    .stat{padding:18px;border-radius:14px;background:rgba(117,169,255,.08);border:1px solid var(--line)}.stat b{font:800 1.5rem Manrope;display:block}.stat span{font-size:.82rem;color:var(--muted)}
+    .timeline{display:grid;gap:18px;margin-top:34px}.job{display:grid;grid-template-columns:190px 1fr;gap:25px}.date{color:var(--cyan);font-weight:700;font-size:.9rem;padding-top:4px}.job h3{margin:0 0 5px;font-size:1.18rem}.job .org{color:var(--blue);font-weight:600}.job p{color:var(--muted);margin:12px 0 0}.job ul{color:var(--muted);padding-left:19px;margin:12px 0 0}.job li{margin:7px 0}
+    .education{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:32px}.edu-title{color:var(--blue);font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.chip{padding:9px 13px;background:rgba(117,169,255,.08);border:1px solid var(--line);border-radius:999px;color:#dbe8ff;font-size:.9rem}
+    .skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:32px}.skill-card h3{margin-bottom:16px}.skill-card p{color:var(--muted);margin:0}
+    .cert-list{display:grid;gap:13px;margin-top:28px}.cert{display:flex;gap:14px;align-items:flex-start;padding:17px 19px;border:1px solid var(--line);border-radius:13px;background:rgba(21,34,56,.6)}.cert-icon{width:35px;height:35px;display:grid;place-items:center;background:rgba(103,232,210,.12);border-radius:10px;color:var(--cyan);flex-shrink:0}
+    .contact-box{display:flex;justify-content:space-between;align-items:center;gap:30px;background:linear-gradient(120deg,rgba(44,83,142,.38),rgba(25,70,83,.3));border:1px solid var(--line);border-radius:22px;padding:35px;margin-top:30px}.contact-box p{color:var(--muted);margin-bottom:0}
+    .contact-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.contact-links a{color:var(--blue);font-weight:600}
+    footer{padding:28px 0;color:var(--muted);font-size:.85rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;gap:50px;padding:65px 0}.portrait-wrap{width:min(290px,75%);grid-row:1}.hero-copy{grid-row:2}.about-grid,.skill-grid,.education{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:5px}.contact-box{align-items:flex-start;flex-direction:column}.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#0b1220;padding:20px 25px;flex-direction:column;gap:16px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}}
+    @media(max-width:480px){.container{width:min(100% - 28px,1120px)}h1{font-size:2.75rem}.stats{grid-template-columns:1fr}.floating{left:-15px}.card{padding:20px}.contact-box{padding:24px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home">ROHIT<span>.</span></a>
+      <button class="menu" id="menuBtn" aria-label="Open navigation">☰</button>
+      <div class="navlinks" id="navlinks">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="container hero" id="home">
+    <div class="hero-copy reveal">
+      <div class="eyebrow"><span class="dot"></span> HR & Administrative Professional</div>
+      <h1>Rohit Kumar<span>.</span></h1>
+      <p>People-focused HR professional with experience in talent acquisition, employee onboarding, HR operations and institutional coordination. I bring structure to processes and build strong working relationships.</p>
+      <div class="actions">
+        <a class="btn primary" href="assets/Rohit_Kumar_Resume.pdf" download>Download Resume ↗</a>
+        <a class="btn" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+    <div class="portrait-wrap reveal">
+      <img class="portrait" src="assets/rohit-kumar.jpg" alt="Portrait of Rohit Kumar">
+      <div class="floating"><strong>2022 – Present</strong><small>HR & recruitment experience</small></div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="container reveal">
+      <div class="section-kicker">01 / About me</div>
+      <h2>Connecting people, process<br>and performance.</h2>
+      <p class="lead">Results-driven HR and Administrative Professional with an MBA from Central University of Haryana and CSEET qualification from ICSI. Experienced in recruitment, onboarding, HR compliance, reporting and multi-stakeholder coordination. Proficient in Power BI and MS Office for data-informed decision-making.</p>
+      <div class="stats">
+        <div class="stat"><b>4+ yrs</b><span>Professional experience*</span></div>
+        <div class="stat"><b>HR</b><span>Talent & people operations</span></div>
+        <div class="stat"><b>Power BI</b><span>Reporting & analytics</span></div>
+      </div>
+      <p style="font-size:.78rem;color:var(--muted);margin-top:12px">*Based on the employment dates listed in the supplied resume.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container reveal">
+      <div class="section-kicker">02 / Career journey</div>
+      <h2>Professional experience</h2>
+      <div class="timeline">
+        <article class="card job">
+          <div class="date">2022 — Present</div>
+          <div>
+            <h3>Executive HR</h3><div class="org">Haryana Employment Consultancy Services</div>
+            <ul>
+              <li>Managed the end-to-end recruitment lifecycle, including job postings, sourcing, screening, shortlisting and placements across multiple sectors.</li>
+              <li>Coordinated interview panels, maintained candidate pipelines and supported smooth onboarding.</li>
+              <li>Prepared HR MIS reports, maintained employee records and organized compliance documentation for management and audits.</li>
+              <li>Worked with client organizations to understand manpower requirements and support adherence to employment laws and HR policies.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card job">
+          <div class="date">2020 — 2022</div>
+          <div>
+            <h3>Nodal Officer</h3><div class="org">Inter Institutional Computer Centre (Educational Board)</div>
+            <ul>
+              <li>Served as the central liaison between the computer centre and affiliated educational institutions.</li>
+              <li>Managed scheduling, resource allocation, official correspondence and progress reporting.</li>
+              <li>Oversaw administrative operations and proactively resolved issues to support timely task completion across departments.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container reveal">
+      <div class="section-kicker">03 / Education</div>
+      <h2>Academic background</h2>
+      <div class="education">
+        <div class="card"><div class="edu-title">Postgraduate</div><h3>MBA</h3><p>Central University of Haryana</p></div>
+        <div class="card"><div class="edu-title">School education</div><h3>12th & 10th</h3><p>Haryana Board of School Education (HBSE)</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container reveal">
+      <div class="section-kicker">04 / Capabilities</div>
+      <h2>Skills & strengths</h2>
+      <div class="skill-grid">
+        <div class="card skill-card"><h3>Human Resources</h3><p>Talent Acquisition · Employee Onboarding · HR MIS Reporting · HR Database Management · Policy Compliance</p></div>
+        <div class="card skill-card"><h3>Administration</h3><p>Institutional Coordination · Resource Planning · Documentation · Inter-departmental Communication</p></div>
+        <div class="card skill-card"><h3>Digital & Technical</h3><p>Power BI · MS Word · MS Excel · MS PowerPoint · Computer Fundamentals · Internet & Email Management</p></div>
+        <div class="card skill-card"><h3>Professional strengths</h3><p>Leadership · Communication · Team Collaboration · Problem Solving · Time Management · Attention to Detail</p></div>
+      </div>
+      <div class="chips"><span class="chip">Hindi — Native</span><span class="chip">English — Professional Proficiency</span></div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="container reveal">
+      <div class="section-kicker">05 / Credentials</div>
+      <h2>Certifications</h2>
+      <div class="cert-list">
+        <div class="cert"><div class="cert-icon">✓</div><div><strong>CSEET — Qualified</strong><div style="color:var(--muted)">Company Secretary Executive Entrance Test · Institute of Company Secretaries of India (ICSI)</div></div></div>
+        <div class="cert"><div class="cert-icon">▦</div><div><strong>Power BI</strong><div style="color:var(--muted)">Data Visualization & HR Analytics Reporting</div></div></div>
+        <div class="cert"><div class="cert-icon">▤</div><div><strong>MS Office Suite</strong><div style="color:var(--muted)">Advanced Proficiency — Word, Excel and PowerPoint</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container reveal">
+      <div class="section-kicker">06 / Let's connect</div>
+      <h2>Open to meaningful opportunities.</h2>
+      <p class="lead">Interested in HR, recruitment, administration and people operations opportunities. Feel free to connect for professional discussions and collaborations.</p>
+      <div class="contact-box">
+        <div><h3 style="font-size:1.45rem;margin:0">Let's start a conversation.</h3><p>Reach out by email, phone or LinkedIn.</p></div>
+        <a class="btn primary" href="mailto:rohitmahayach20@gmail.com">Email Rohit ↗</a>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:rohitmahayach20@gmail.com">✉ rohitmahayach20@gmail.com</a>
+        <a href="tel:+919499476766">☎ +91 9499476766</a>
+        <a href="https://www.linkedin.com/in/rohit-kumar-089669327/" target="_blank" rel="noopener">in LinkedIn ↗</a>
+        <a href="https://github.com/Rohitmahayach" target="_blank" rel="noopener">⌘ GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="container foot"><span>© <span id="year"></span> Rohit Kumar. All rights reserved.</span><span>Designed with purpose · Built for the web</span></div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('navlinks');
+  menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
